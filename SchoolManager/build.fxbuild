@@ -1,0 +1,2 @@
+jfx.build.stagingdir = ${workspace}/SchoolManager/build
+jfx.build.apptitle = SchoolManager

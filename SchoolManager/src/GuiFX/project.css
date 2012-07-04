@@ -1,0 +1,107 @@
+#toolbar {
+	-fx-base: rgb(74, 75, 78);
+	-fx-background-color: linear-gradient(to bottom,  rgb(74,75, 78) 0%, rgb(39,40,40) 100%);
+	-fx-effect: dropshadow(two-pass-box,black,5,.2,0,0);
+}
+
+#projectName {
+   -fx-font-size: 31px;
+   -fx-font-family: "Arial";
+   -fx-font-weight: bold;
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(2,10,0,0.3) , 6, 0.0 , 0 , 2 );
+}
+
+#menubar {
+	-fx-background-color: rgb(216, 222, 227);
+	-fx-border-color: rgb(74, 75, 78);
+	-fx-border-style: solid;
+	-fx-border-insets: 0 0 -10 -10;
+	-fx-effect: innershadow( three-pass-box , rgba(2,10,0,0.3) , 6, 0.0 , 0 , 2 );
+}
+
+#menubar_Notes {
+	-fx-background-color: null;
+	-fx-padding: 0 0 0 -5;
+	-fx-background-radius: -20;
+}
+
+#menubar_Notes:focused {
+    -fx-background-color: null;
+}
+
+#menubar_Notes .tree-cell {
+    -fx-indent: 10;
+    -fx-background-color: transparent;
+}
+#menubar_Notes .tree-cell:odd {
+    -fx-background-color: transparent;
+}
+#menubar_Notes .tree-cell:filled:selected:focused, #menubar_Notes .tree-cell:filled:selected {
+    -fx-background-color: rgb(74, 75, 78);
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+#menubar_Notes .tree-cell:filled:hover, #menubar_Notes .tree-cell:filled:hover {
+    -fx-background-color: silver;
+    -fx-text-fill: white;
+}
+
+
+#editor-titlebar{
+	-fx-border-color: black;
+}
+
+#editor-button {
+	-fx-text-fill: grey;
+	-fx-font-family: "Arial";
+	-fx-font-weight: bold;
+	-fx-background-radius: 0;  
+	-fx-background-insets: 0;   
+	-fx-border-insets: 0;  
+}
+
+#editor-button:hover {
+	-fx-text-fill: black;
+}
+
+#editor-title {
+	-fx-font-size: 16px;
+	-fx-background-radius: 0;
+}
+
+#editor-title:hover {
+	-fx-border-width: 1;
+	-fx-border-color: dodgerblue;
+	-fx-border-insets: 0 0.2 0 0.2;
+}
+
+#toggle-button {
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-background-color: rgb(5,5,5), 
+						  rgb(87,89,92),
+						  linear-gradient(to bottom, rgb(74,75, 78) 2%, rgb(39,40,40) 98%);
+	-fx-background-insets: 0, 1 1 1 0, 2 1 1 1;
+	-fx-background-radius: 0;
+	-fx-padding: 0.8em 2.3em 0.8em 2.3em;
+}
+
+#toggle-button:selected {
+	-fx-background-color: rgb(5,5,5), 
+						  rgb(87,89,92),
+						  linear-gradient(to bottom, rgb(74,75, 78) 98%, rgb(39,40,40) 2%);
+}
+
+.context-menu {
+  -fx-background-color: rgb(74, 75, 78);
+  -fx-background-radius: 0;
+  -fx-border-color: white;
+  -fx-border-insets: -2 -2 -2 -2;
+  -fx-border-width: 2;
+  -fx-text-fill: white;
+}
+
+.menu-item .label {
+  -fx-text-fill: white;
+}
